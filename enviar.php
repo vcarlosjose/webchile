@@ -22,7 +22,7 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
 }else{
 
 
-    require("class.phpmailer.php"); // Requiere PHPMAILER para poder enviar el formulario desde el SMTP de google
+    require("php/class.phpmailer.php"); // Requiere PHPMAILER para poder enviar el formulario desde el SMTP de google
     $mail = new PHPMailer();
 
     $mail->From     = $Email;
