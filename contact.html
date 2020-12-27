@@ -52,7 +52,8 @@
 		</nav>
 	</header>
 	<!-- Header section end -->   
-
+	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+	<div class="elfsight-app-df07dd6a-777d-4426-b868-9aa8be9a4c5b"></div>
 
 	<!-- Page header section start -->
 	<section class="page-header-section set-bg" data-setbg="img/header-bg-2.jpg">
@@ -75,19 +76,18 @@
 					<p>Teléfono: +56 9 9575 4542</p>
 					<p>gmsolucionesintegrales@gmail.com</p>
 					<div class="cf-social">
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
 						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
+						
 					</div>
 				</div>
 				<div class="col-lg-9">
-					<form name="contact" class="contact-form" method="POST" data-netlify="true">
-						<input type="text" placeholder="Su nombre por favor">
-						<input type="text" placeholder="Su direccion de email">
-						<textarea placeholder="Mensaje ..."></textarea>
-						<button class="site-btn sb-dark">Enviar</button>
-					</form>
+					<form name="contact" class="contact-form" action="php/enviar.php" method="post" name="contact">
+
+						<input id="Nombre" type="text" placeholder="Su nombre por favor" name="Nombre">
+						<input id="Email"  type="email" placeholder="Su direccion de email" name="Email">
+						<textarea id="Mensaje" placeholder="Mensaje ..."name="Mensaje"></textarea>
+						<button class="site-btn sb-dark" type="submit" >Enviar</button>
+					</form> 
 					<input type="hidden" name="form-name" value="contact">
 				</div>
 			</div>
@@ -154,9 +154,9 @@
 	<script src="js/circle-progress.min.js"></script>
 	<script src="js/main.js"></script>
 	
-	<!-- load for map -->
+	<!-- load for map 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
-	<script src="js/map.js"></script>
+	<script src="js/map.js"></script>-->
 
 </body>
 </html>
